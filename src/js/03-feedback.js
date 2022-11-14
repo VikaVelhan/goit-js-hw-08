@@ -27,7 +27,7 @@ function onFormSubmit(e) {
   e.preventDefault();
 
   if (localStorage.getItem(STORAGE_KAY)) {
-    console.log(JSON.parse(localStorage.getItem(STORAGE_KAY)));
+    console.log(`email: ${refs.email.value}, message: ${refs.message.value}`);
   }
   e.target.reset();
   localStorage.removeItem(STORAGE_KAY);
